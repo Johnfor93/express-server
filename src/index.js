@@ -55,4 +55,6 @@ router.post("/payment/create", (req, res) => {
 app.use(`/.netlify/functions/api`, router);
 
 app.listen();
+
+module.exports = app;
 module.exports.handler = serverless(app);
